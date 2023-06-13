@@ -106,8 +106,8 @@ public class SaveFragment extends Fragment {
     }
     private boolean SaveTask(@Nullable Integer id){
         Task task = new Task();
-        task.setTitle(et_title.getText().toString());
-        task.setDescription(et_description.getText().toString());
+        task.setTitle(et_title.getText().toString().trim());
+        task.setDescription(et_description.getText().toString().trim());
         task.setImage(ImageManagement.GetImageBytes(getActivity(), imageUri));
 
         if(et_title.getText().toString().isEmpty() || et_description.getText().toString().isEmpty() || ImageManagement.GetImageBytes(getActivity(), imageUri) == null){

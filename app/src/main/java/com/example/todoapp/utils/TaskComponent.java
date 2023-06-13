@@ -42,7 +42,6 @@ public class TaskComponent extends LinearLayout {
         btnDelete = findViewById(R.id.btn_delete);
 
         arrow = findViewById(R.id.arrow);
-
     }
 
     public int getTaskDescriptionVisibility() {
